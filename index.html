@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ray Tracer</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Ray Tracer</a>
+    </nav>
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <!-- Container for ray tracer canvas -->
+                <div class="card">
+                    <div class="card-header">
+                        Ray Tracer
+                    </div>
+                    <div class="card-body">
+                        <canvas id="ray-viewer" class="ray-viewer"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <!-- Container for user input values -->
+                <div class="card">
+                    <div class="card-header">
+                        Enter your values
+                    </div>
+                    <div class="card-body">
+                        <div class="col-12">
+                            <p class="mt-0">
+                                <label for="length-input ">Length</label>
+                                <input type="text" name="length-input" id="length-input" class="full-width">
+                            </p>
+                            <p class="mt-2">
+                                <label for="thickness-input">Thickness</label>
+                                <input type="text" name="thickness-input" id="thickness-input" class="full-width">
+                            </p>
+                            <p class="mt-2">
+                                <button type="button" class="btn btn-primary half-width" id="btn-play">Start</button>
+                                <button type="button" class="btn btn-primary half-width" id="btn-pause">Pause</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Container for current values from canvas -->
+                <div class="card mt-2">
+                    <div class="card-header">
+                        Values
+                    </div>
+                    <div class="card-body">
+                        <div class="col-12">
+                            <p>
+                                <label for="length">Length:</label>
+                                <span id="length"></span>
+                            </p>
+                            <p>
+                                <label for="thickness">Thickness:</label>
+                                <span id="thickness"></span>
+                            </p>
+                            <p>
+                                <label for="angle">Angle:</label>
+                                <span id="angle"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/tracer.js"></script>
+</body>
+
+</html>

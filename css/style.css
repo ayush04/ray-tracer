@@ -1,0 +1,32 @@
+html,
+body {
+    height: 100%;
+    widows: 100%;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.ray-viewer {
+    background-color: black;
+    z-index: -1;
+}
+
+.toolbar {
+    position: absolute;
+    top: 400px;
+}
+
+.dashboard {
+    position: absolute;
+    top: 420px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 49%;
+}
